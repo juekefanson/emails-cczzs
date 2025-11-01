@@ -1,0 +1,26 @@
+name = "emails-cczzs"
+main = "src/index.js"
+compatibility_date = "2023-06-08"
+
+# 本地开发环境配置（仅用于本地测试）
+# [[kv_namespaces]]
+# binding = "EMAIL_STORE"
+# preview_id = "email-store-dev"
+
+# [[r2_buckets]]
+# binding = "EMAIL_ATTACHMENTS"
+# preview_bucket_name = "email-attachments-dev"
+
+# 环境变量设置
+[vars]
+# Resend 邮件服务的 API Key
+RESEND_API_KEY = "re_9pVX7Rui_DmD8aSKi1RAmVzqTyffmHpGk" # 部署后在Cloudflare控制台设置
+# 登录认证信息
+AUTH_USER = "jueke"      # 部署后在Cloudflare控制台设置
+AUTH_PASSWORD = "fanson123"  # 部署后在Cloudflare控制台设置
+AUTH_EMAIL = "admin@cczzs.com"     # 部署后在Cloudflare控制台设置
+# 默认设置
+DEFAULT_THEME = "light" # 默认主题：light或dark
+DEFAULT_LANG = "zh-CN"  # 默认语言：zh-CN或en-US
+
+
